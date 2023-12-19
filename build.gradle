@@ -1,0 +1,41 @@
+buildscript {
+    
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        google()
+    }
+    dependencies {
+       classpath "io.freefair.gradle:lombok-plugin:5.3.0"
+    }
+}
+
+allprojects {
+    apply plugin: "eclipse"
+	apply plugin: "io.freefair.lombok"
+    version = '1.0'
+    
+    ext {
+        appName = "CleanCode"
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+        gradlePluginPortal()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+project(":exercices") {
+    apply plugin: "java-library"
+
+    dependencies {
+         testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    }
+}

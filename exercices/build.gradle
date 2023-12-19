@@ -1,0 +1,19 @@
+apply plugin: "java"
+
+sourceCompatibility = 1.17
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+sourceSets 
+{
+    main 
+    {
+        java 
+        {
+            srcDir 'src'  
+            srcDir 'lisibilite' 
+            srcDir 'simplicite'    
+        }
+    }
+}
+
+eclipse.project.name = appName + "-exercices"
