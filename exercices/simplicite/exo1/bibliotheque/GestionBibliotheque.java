@@ -41,9 +41,9 @@ public class GestionBibliotheque {
     }
 
     private static void gererBibliotheque(Map<String, Integer> stockLivres, Map<String, Map<String, Integer>> emprunts) {
-        System.out.println("Bienvenue à la bibliothèque!");
+        System.out.println("Bienvenue a la bibliotheque!");
         
-        System.out.println("Liste des livres disponibles et leur quantité :");
+        System.out.println("Liste des livres disponibles et leur quantite :");
         for (Map.Entry<String, Integer> livre : stockLivres.entrySet()) {
             System.out.println("- " + livre.getKey() + ": " + livre.getValue() + " exemplaires");
         }
@@ -55,21 +55,21 @@ public class GestionBibliotheque {
             System.out.println();
         }
 
-        System.out.println("Vérification des stocks de livres...");
+        System.out.println("Verification des stocks de livres...");
         for (Map.Entry<String, Integer> livre : stockLivres.entrySet()) {
             if (livre.getValue() < 2) {
                 System.out.println("Alerte: Stock faible pour " + livre.getKey());
             }
         }
 
-        System.out.println("Mise à jour des emprunts...");
+        System.out.println("Mise a� jour des emprunts...");
         for (Map.Entry<String, Map<String, Integer>> emprunt : emprunts.entrySet()) {
             int totalEmprunte = emprunt.getValue().values().stream().mapToInt(Integer::intValue).sum();
             if (totalEmprunte > 2) {
-                System.out.println("Alerte: " + emprunt.getKey() + " a emprunté plus de 2 livres!");
+                System.out.println("Alerte: " + emprunt.getKey() + " a emprunte plus de 2 livres!");
             }
         }
 
-        System.out.println("Gestion terminée.");
+        System.out.println("Gestion terminee.");
     }
 }

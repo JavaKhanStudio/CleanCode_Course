@@ -14,10 +14,10 @@ public class MainMeteo {
 		List<Integer> nombresPremiers = MeteoUtils.prem(tempMaxCelsius);
 
 		// Afficher ou enregistrer les résultats
-		System.out.println("Température moyenne (Celsius): " + moyenneCelsius);
-		System.out.println("Température moyenne (Fahrenheit): " + moyenneFahrenheit);
-		System.out.println("Température maximale (Celsius): " + tempMaxCelsius);
-		System.out.println("Nombres premiers jusqu'à la température maximale: " + nombresPremiers);
+		System.out.println("Temperature moyenne (Celsius): " + moyenneCelsius);
+		System.out.println("Temperature moyenne (Fahrenheit): " + moyenneFahrenheit);
+		System.out.println("Temperature maximale (Celsius): " + tempMaxCelsius);
+		System.out.println("Nombres premiers jusqu'a la temperature maximale: " + nombresPremiers);
 
 	}
 	

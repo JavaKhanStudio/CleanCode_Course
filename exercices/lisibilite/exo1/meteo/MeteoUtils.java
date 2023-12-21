@@ -21,7 +21,7 @@ public class MeteoUtils {
 
 	public static int tMax(List<Integer> a) {
 	    if (a == null || a.size() == 0) {
-	        throw new IllegalArgumentException("Le tableau ne peut pas être vide ou null.");
+	        throw new IllegalArgumentException("Le tableau ne peut pas etre vide ou null.");
 	    }
 	    int max = a.get(0);
 	    for (int v : a) {
@@ -38,8 +38,8 @@ public class MeteoUtils {
 		switch (currentTime) {
 			case 1 -> valeur = "Il fait beau !" ;
 			case 2 -> valeur = "Il fait trop moche !" ;
-			case 3 -> valeur = "Il pleut des bébé singes !" ;
-			case 4 -> valeur = "Il fait un temps indéfini !" ;
+			case 3 -> valeur = "Il pleut des bebe singes !" ;
+			case 4 -> valeur = "Il fait un temps indefini !" ;
 			default -> valeur = "Je ne sais pas";
 		}
 		
