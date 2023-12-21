@@ -17,7 +17,7 @@ public class MainMeteo {
 		System.out.println("Temperature moyenne (Celsius): " + moyenneCelsius);
 		System.out.println("Temperature moyenne (Fahrenheit): " + moyenneFahrenheit);
 		System.out.println("Temperature maximale (Celsius): " + tempMaxCelsius);
-		System.out.println("Nombres premiers jusqu'a  la temperature maximale: " + nombresPremiers);
+		System.out.println("Nombres premiers jusqu'a la temperature maximale: " + nombresPremiers);
 
 	}
 	
