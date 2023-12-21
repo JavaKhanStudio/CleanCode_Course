@@ -12,6 +12,7 @@ sourceSets
             srcDir 'src'  
             srcDir 'lisibilite' 
             srcDir 'simplicite'    
+            srcDir 'reusabilite'    
         }
     }
 }
