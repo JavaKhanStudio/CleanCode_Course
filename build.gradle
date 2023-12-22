@@ -33,8 +33,7 @@ allprojects {
 }
 
 subprojects {
-
-	apply plugin: 'java'
+    apply plugin: 'java'
 
     java {
         toolchain {
@@ -42,8 +41,6 @@ subprojects {
         }
     }
 }
-
-
 
 project(":exercices") {
     
