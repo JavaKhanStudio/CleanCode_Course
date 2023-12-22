@@ -32,8 +32,21 @@ allprojects {
     }
 }
 
+subprojects {
+
+	apply plugin: 'java'
+
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(17))
+        }
+    }
+}
+
+
+
 project(":exercices") {
-    apply plugin: "java-library"
+    
 
     dependencies {
          testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
