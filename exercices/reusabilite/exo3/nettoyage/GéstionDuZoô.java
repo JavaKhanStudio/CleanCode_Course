@@ -1,4 +1,4 @@
-package exo2.nettoyage;
+package exo3.nettoyage;
 
 import java.util.HashMap;
 import java.util.Map;
