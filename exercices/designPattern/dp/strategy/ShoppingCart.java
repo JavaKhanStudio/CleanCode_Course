@@ -1,5 +1,7 @@
 package dp.strategy;
 
+import dp.strategy.structure.PaymentStrategy;
+
 public class ShoppingCart {
     private PaymentStrategy paymentMethod;
 

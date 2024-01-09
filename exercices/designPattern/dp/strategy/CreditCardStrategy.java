@@ -1,6 +1,6 @@
-package dp.strategy.structure;
+package dp.strategy;
 
-import dp.strategy.PaymentStrategy;
+import dp.strategy.structure.PaymentStrategy;
 
 public class CreditCardStrategy implements PaymentStrategy {
     private String cardNumber;

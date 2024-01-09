@@ -9,6 +9,7 @@ sourceSets
     {
         java 
         {
+        srcDir 'src'
             srcDir 'lisibilite' 
             srcDir 'simplicite'    
             srcDir 'reusabilite'    

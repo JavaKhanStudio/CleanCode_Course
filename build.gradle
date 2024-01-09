@@ -44,7 +44,6 @@ subprojects {
 
 project(":exercices") {
     
-
     dependencies {
          testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
          implementation 'com.github.javafaker:javafaker:1.0.2'
