@@ -4,10 +4,10 @@ import dp.decorator.structure.Coffee;
 import dp.decorator.structure.CoffeeDecorator;
 
 public class SugarDecorator extends CoffeeDecorator {
+	
 	 public SugarDecorator(Coffee coffee) {
 	     super(coffee);
 	 }
-
 
 	 @Override
 	 public double getCost() {
@@ -18,4 +18,4 @@ public class SugarDecorator extends CoffeeDecorator {
 	 public String getDescription() {
 	     return super.getDescription() + ", With Sugar";
 	 }
-	}
+}
