@@ -62,7 +62,7 @@ public class GestionBibliotheque {
             }
         }
 
-        System.out.println("Mise a  jour des emprunts...");
+        System.out.println("Mise Ã  jour des emprunts...");
         for (Map.Entry<String, Map<String, Integer>> emprunt : emprunts.entrySet()) {
             int totalEmprunte = emprunt.getValue().values().stream().mapToInt(Integer::intValue).sum();
             if (totalEmprunte > 2) {

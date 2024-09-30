@@ -7,20 +7,26 @@ buildscript {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         google()
     }
-    dependencies {
-        classpath "io.freefair.gradle:lombok-plugin:5.3.0"
-    }
 }
 
 plugins {
     id 'java'
 }
 
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
 
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
+}
 
 allprojects {
     apply plugin: "eclipse"
-	apply plugin: "io.freefair.lombok"
+
     version = '1.0'
     
     ext {
@@ -44,11 +50,14 @@ java {
     }
 }
 
+
 project(":exercices") {
     apply plugin: 'java'
 
     dependencies {
-         testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
-         implementation 'com.github.javafaker:javafaker:1.0.2'
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+        compileOnly 'org.projectlombok:lombok:1.18.26'
+        annotationProcessor 'org.projectlombok:lombok:1.18.26'
+        implementation 'com.github.javafaker:javafaker:1.0.2'
     }
 }

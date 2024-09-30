@@ -12,6 +12,6 @@ public class DisplayDevice implements Observer {
     }
 
     public void display() {
-        System.out.println("Current Temperature: " + temperature + "°C");
+        System.out.println("Current Temperature: " + temperature + "Â°C");
     }
 }

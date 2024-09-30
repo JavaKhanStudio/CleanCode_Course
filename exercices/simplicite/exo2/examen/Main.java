@@ -10,11 +10,11 @@ public class Main {
    
 	
 	public static void main(String[] args) {
-        voterPourLoi("Loi sur l'éducation", 3);
+        voterPourLoi("Loi sur l'ï¿½ducation", 3);
     }
 
     private static void voterPourLoi(String nomLoi, int nombreAmendements) {
-        System.out.println("Début du processus de vote pour la " + nomLoi);
+        System.out.println("DÃ©but du processus de vote pour la " + nomLoi);
 
         Faker faker = new Faker() ; 
         Random random = new Random();
@@ -23,12 +23,12 @@ public class Main {
         
         List<Senateur> senateurs = new ArrayList<>();
 
-        senateurs.add(new Senateur("Victor Hugo", "Parti Républicain", 1876, "Défenseur des droits et de la liberté"));
-        senateurs.add(new Senateur("Georges Clemenceau", "Parti Radical", 1902, "Promoteur de la République et de ses valeurs"));
-        senateurs.add(new Senateur("Alphonse de Lamartine", "Parti Libéral", 1852, "Poète et homme politique engagé"));
-        senateurs.add(new Senateur("Léon Gambetta", "Parti Républicain", 1879, "Figure clé de la Troisième République"));
+        senateurs.add(new Senateur("Victor Hugo", "Parti RÃ©publicain", 1876, "Dï¿½fenseur des droits et de la libertÃ©"));
+        senateurs.add(new Senateur("Georges Clemenceau", "Parti Radical", 1902, "Promoteur de la RÃ©publique et de ses valeurs"));
+        senateurs.add(new Senateur("Alphonse de Lamartine", "Parti LibÃ©ral", 1852, "PoÃªte et homme politique engagÃ©"));
+        senateurs.add(new Senateur("Lï¿½on Gambetta", "Parti RÃ©publicain", 1879, "Figure clÃ© de la TroisiÃ¨me RÃ©publique"));
         
-        String[] domaines = {"Économique", "Environnemental", "Social", "Éducatif", "Technologique"};
+        String[] domaines = {"Ã©conomique", "Environnemental", "Social", "Ã©ducatif", "Technologique"};
         
         
         for (int i = 0; i < nombreAmendements; i++) {
@@ -73,13 +73,13 @@ public class Main {
 					}
 		            
 		            if (votesPour > votesContre) {
-		                System.out.println("L'amendement " + amendement.nom + " a été adoptée avec "  + votesPour + " votes pour et " + votesContre + " votes contre.");
+		                System.out.println("L'amendement " + amendement.nom + " a ï¿½tï¿½ adoptï¿½e avec "  + votesPour + " votes pour et " + votesContre + " votes contre.");
 		                amendement.passe = true;
 		                amendementPour++ ; 
 		                break ;
 		            }
 		            else {
-		            	System.out.println("L'amendement " + amendement.nom + " n'a pas été adoptée avec " + votesPour + " votes pour et " + votesContre + " votes contre.");
+		            	System.out.println("L'amendement " + amendement.nom + " n'a pas ï¿½tï¿½ adoptï¿½e avec " + votesPour + " votes pour et " + votesContre + " votes contre.");
 		                amendement.passe = false;
 		            }
 		       }
@@ -94,9 +94,9 @@ public class Main {
        
 
         if (amendementPour >= amendementContre) {
-        	System.out.println("La loi " + nomLoi + " a été adoptée!");
+        	System.out.println("La loi " + nomLoi + " a ï¿½tï¿½ adoptï¿½e!");
         } else {
-        	 System.out.println("La loi " + nomLoi + " n'a pas été adoptée :(");
+        	 System.out.println("La loi " + nomLoi + " n'a pas ï¿½tï¿½ adoptï¿½e :(");
         }
         
         
